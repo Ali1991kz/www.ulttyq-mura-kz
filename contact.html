@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Байланыс</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f1e7;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background: #8B0000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .language-switcher {
+            margin-top: 10px;
+        }
+        .language-switcher a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .language-switcher a:hover {
+            background: #fff;
+            color: #8B0000;
+        }
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 15px;
+            text-decoration: none;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #8B0000;
+            color: #fff;
+        }
+        .social-icons {
+            margin-top: 10px;
+        }
+        .social-icons a {
+            text-decoration: none;
+        }
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #8B0000;
+        }
+        h2 {
+            text-align: center;
+            color: #8B0000;
+        }
+        .contact-info, .contact-form {
+            margin: 20px auto;
+            max-width: 600px;
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #8B0000;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .contact-form button:hover {
+            background: #a30000;
+        }
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+        }
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .map-title {
+            text-align: center;
+            font-size: 1.8em;
+            color: #8B0000;
+            margin: 20px 0;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-header">Байланыс</h1>
+        <div class="language-switcher">
+            <a href="#" onclick="changeLanguage('kk')">Қазақша</a>
+            <a href="#" onclick="changeLanguage('ru')">Русский</a>
+            <a href="#" onclick="changeLanguage('en')">English</a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="history.html">Тарих</a>
+        <a href="culture.html">Мәдениет</a>
+        <a href="traditions.html">Дәстүрлер</a>
+        <a href="news.html">Жаңалықтар</a>
+    </nav>
+    <div class="content">
+        <h1 id="content-title">Байланыс мәліметтері</h1>
+        
+        <div class="contact-info">
+            <p id="phone"><b>Телефон:</b> +7 702 394 5785</p>
+            <p id="email"><b>Email:</b> egizbaeva_85@mail.ru </p>
+            <p id="address"><b>Мекенжай:</b> Алматы облысы Іле ауданы Екпінді ауылы Шевченко көшесі 3</p>
+            <p id="work-hours"><b>Жұмыс уақыты:</b> Дүйсенбі - Жұма, 09:00 - 18:00</p>
+            <!-- Иконка Instagram добавлена здесь -->
+            <p><b>Instagram:</b> <a href="https://www.instagram.com/ulttyq_mura_kz?igsh=MTBocG5pa2FzODRhdQ==" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/2048px-Instagram_logo_2022.svg.png" alt="Instagram" style="width: 30px; height: 30px; vertical-align: middle;"></a></p>
+            <!-- Иконка WhatsApp добавлена здесь -->
+            <p><b>WhatsApp:</b> <a href="https://wa.me/77023945785?text=%D0%9F%D1%80%D0%B8%D0%B2%D0%B5%D1%82!%20%F0%9F%91%8B" target="_blank">
+                <img src="https://img.icons8.com/?size=512&id=16713&format=png" alt="WhatsApp" style="width: 30px; height: 30px; vertical-align: middle;"></a></p>
+        </div>
+
+        <h2 id="contact-us">Бізге хат жіберіңіз</h2>
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Атыңыз:</label>
+                <input type="text" id="name" name="name" placeholder="Атыңызды енгізіңіз" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email адресіңізді енгізіңіз" required>
+
+                <label for="message">Хабарлама:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Хабарламаңызды осында жазыңыз..." required></textarea>
+
+                <button type="submit">Жіберу</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="map-title" id="map-title">Біздің орналасқан жеріміз!</div>
+    <div class="map-container">
+        <iframe 
+            src="https://yandex.kz/map-widget/v1/?ll=76.658417%2C43.382722&z=15&l=map&whatshere%5Bpoint%5D=76.658417%2C43.382722"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <footer>
+        <p id="footer-contact">Барлық құқықтар қорғалған &copy; 2025</p>
+    </footer>
+
+    <script>
+        const translations = {
+            kk: {
+                title: "Байланыс",
+                header: "Байланыс",
+                contentTitle: "Байланыс мәліметтері",
+                contactUs: "Бізге хат жіберіңіз",
+                phone: "Телефон:",
+                email: "Email:",
+                address: "Мекенжай:",
+                workHours: "Жұмыс уақыты:",
+                mapTitle: "Біздің орналасқан жеріміз!",
+                footerContact: "Барлық құқықтар қорғалған &copy; 2025"
+            },
+            ru: {
+                title: "Контакты",
+                header: "Контакты",
+                contentTitle: "Контактные данные",
+                contactUs: "Напишите нам",
+                phone: "Телефон:",
+                email: "Email:",
+                address: "Адрес:",
+                workHours: "Часы работы:",
+                mapTitle: "Наше местоположение!",
+                footerContact: "Все права защищены &copy; 2025"
+            },
+            en: {
+                title: "Contact",
+                header: "Contact",
+                contentTitle: "Contact Information",
+                contactUs: "Write to Us",
+                phone: "Phone:",
+                email: "Email:",
+                address: "Address:",
+                workHours: "Working Hours:",
+                mapTitle: "Our Location!",
+                footerContact: "All rights reserved &copy; 2025"
+            }
+        };
+
+        const currentLang = localStorage.getItem("lang") || "kk";
+
+        function applyTranslations(lang) {
+            const t = translations[lang];
+            document.title = t.title;
+            document.getElementById("page-header").textContent = t.header;
+            document.getElementById("content-title").textContent = t.contentTitle;
+            document.getElementById("contact-us").textContent = t.contactUs;
+            document.getElementById("phone").innerHTML = `<b>${t.phone}</b> +7 702 394 5785`;
+            document.getElementById("email").innerHTML = `<b>${t.email}</b> egizbaeva_85@mail.ru`;
+            document.getElementById("address").innerHTML = `<b>${t.address}</b> Алматы облысы Іле ауданы Екпінді ауылы Шевченко көшесі 3`;
+            document.getElementById("work-hours").innerHTML = `<b>${t.workHours}</b> Дүйсенбі - Жұма, 09:00 - 18:00`;
+            document.getElementById("map-title").textContent = t.mapTitle;
+            document.getElementById("footer-contact").textContent = t.footerContact;
+        }
+
+        function changeLanguage(lang) {
+            localStorage.setItem("lang", lang);
+            applyTranslations(lang);
+        }
+
+        applyTranslations(currentLang);
+    </script>
+</body>
+</html>

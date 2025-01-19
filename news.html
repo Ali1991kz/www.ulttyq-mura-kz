@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Жаңалықтар</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f1e7;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background: #8B0000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header .language-switcher {
+            margin-top: 10px;
+        }
+        header .language-switcher a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        header .language-switcher a:hover {
+            background: #fff;
+            color: #8B0000;
+        }
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 15px;
+            text-decoration: none;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #8B0000;
+            color: #fff;
+        }
+        .content {
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #8B0000;
+        }
+        .news-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .news-item h2 {
+            color: #8B0000;
+            margin: 0 0 10px;
+        }
+        .news-item p {
+            line-height: 1.6;
+            margin: 0;
+        }
+        .news-item a {
+            color: #8B0000;
+            text-decoration: underline;
+        }
+        .news-item a:hover {
+            color: #333;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-header">Жаңалықтар</h1>
+        <div class="language-switcher">
+            <a href="#" onclick="changeLanguage('kk')">Қазақша</a>
+            <a href="#" onclick="changeLanguage('ru')">Русский</a>
+            <a href="#" onclick="changeLanguage('en')">English</a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="history.html">Тарих</a>
+        <a href="culture.html">Мәдениет</a>
+        <a href="traditions.html">Дәстүрлер</a>
+        <a href="contact.html">Байланыс</a>
+    </nav>
+    <div class="content">
+        <h1 id="content-title">Соңғы жаңалықтар</h1>
+        
+        <div class="news-item">
+            <h2 id="news-title-1">Ақтау 2025 жылы түркі әлемінің мәдени астанасы болады</h2>
+            <p id="news-desc-1">АСТАНА, 18 қараша – Sputnik. Ашхабадта Түркі мәдениеті және өнерін дамыту халықаралық ұйымы – ТҮРКСОЙ-дың 41-отырысы өтті. Толық ақпаратты 
+                <a href="https://sputnik.kz/20241118/aqtau-2025-zhyly-turki-aleminin-madeni-astanasy-bolady-48620007.html" target="_blank">осы сілтемеден</a> оқыңыз.</p>
+        </div>
+
+        <div class="news-item">
+            <h2 id="news-title-2">«Ұлттық мұра» көрмесі Астанада ашылды</h2>
+            <p id="news-desc-2">Астанада қазақ халқының мәдени мұрасын насихаттайтын «Ұлттық мұра» көрмесі ашылды. Толық ақпаратты 
+                <a href="https://kk.wikipedia.org" target="_blank">осы сілтемеден</a> оқыңыз.</p>
+        </div>
+
+        <div class="news-item">
+            <h2 id="news-title-3">Үндістаннан табылған Әбілқайыр хан туралы кітаптың көшірмесі елге жеткізілді</h2>
+            <p id="news-desc-3">Үндістаннан табылған Әбілқайыр хан туралы кітаптың көшірмесі елге жеткізілді. Толық ақпаратты 
+                <a href="https://sputnik.kz" target="_blank">осы сілтемеден</a> оқыңыз.</p>
+        </div>
+    </div>
+    <footer>
+        <p id="footer-contact">Байланыс: egizbaeva_85@mail.ru </p>
+    </footer>
+
+    <script>
+        const translations = {
+            kk: {
+                title: "Жаңалықтар",
+                header: "Жаңалықтар",
+                contentTitle: "Соңғы жаңалықтар",
+                news1Title: "Ақтау 2025 жылы түркі әлемінің мәдени астанасы болады",
+                news1Desc: "АСТАНА, 18 қараша – Sputnik. Ашхабадта Түркі мәдениеті және өнерін дамыту халықаралық ұйымы – ТҮРКСОЙ-дың 41-отырысы өтті. Толық ақпаратты <a href='https://sputnik.kz/20241118/aqtau-2025-zhyly-turki-aleminin-madeni-astanasy-bolady-48620007.html' target='_blank'>осы сілтемеден</a> оқыңыз.",
+                news2Title: "«Ұлттық мұра» көрмесі Астанада ашылды",
+                news2Desc: "Астанада қазақ халқының мәдени мұрасын насихаттайтын «Ұлттық мұра» көрмесі ашылды. Толық ақпаратты <a href='https://kk.wikipedia.org' target='_blank'>осы сілтемеден</a> оқыңыз.",
+                news3Title: "Үндістаннан табылған Әбілқайыр хан туралы кітаптың көшірмесі елге жеткізілді",
+                news3Desc: "Үндістаннан табылған Әбілқайыр хан туралы кітаптың көшірмесі елге жеткізілді. Толық ақпаратты <a href='https://sputnik.kz' target='_blank'>осы сілтемеден</a> оқыңыз.",
+                footerContact: "Байланыс: egizbaeva_85@mail.ru"
+            },
+            ru: {
+                title: "Новости",
+                header: "Новости",
+                contentTitle: "Последние новости",
+                news1Title: "Актау станет культурной столицей тюркского мира в 2025 году",
+                news1Desc: "АШХАБАД, 18 ноября – Sputnik. В Ашхабаде прошла 41-я сессия ТЮРКСОЙ. Подробнее читайте <a href='https://sputnik.kz' target='_blank'>здесь</a>.",
+                news2Title: "Открылась выставка «Национальное наследие» в Астане",
+                news2Desc: "В Астане открылась выставка, посвящённая культурному наследию казахского народа. Подробнее читайте <a href='https://kk.wikipedia.org' target='_blank'>здесь</a>.",
+                news3Title: "Книга об Абулхаир-хане доставлена из Индии",
+                news3Desc: "Книга об Абулхаир-хане доставлена из Индии. Подробнее читайте <a href='https://sputnik.kz' target='_blank'>здесь</a>.",
+                footerContact: "Контакт: egizbaeva_85@mail.ru"
+            },
+            en: {
+                title: "News",
+                header: "News",
+                contentTitle: "Latest News",
+                news1Title: "Aktau to become the cultural capital of the Turkic world in 2025",
+                news1Desc: "ASHGABAT, November 18 – Sputnik. The 41st TURKSOY session took place in Ashgabat. Read more <a href='https://sputnik.kz' target='_blank'>here</a>.",
+                news2Title: "‘National Heritage’ exhibition opens in Astana",
+                news2Desc: "The exhibition dedicated to Kazakh cultural heritage opened in Astana. Read more <a href='https://kk.wikipedia.org' target='_blank'>here</a>.",
+                news3Title: "Copy of Abylkair Khan's book delivered from India",
+                news3Desc: "A copy of Abylkair Khan's book was delivered from India. Read more <a href='https://sputnik.kz' target='_blank'>here</a>.",
+                footerContact: "Contact: egizbaeva_85@mail.ru"
+            }
+        };
+
+        const currentLang = localStorage.getItem("lang") || "kk";
+
+        function applyTranslations(lang) {
+            document.title = translations[lang].title;
+            document.getElementById("page-header").textContent = translations[lang].header;
+            document.getElementById("content-title").textContent = translations[lang].contentTitle;
+            document.getElementById("news-title-1").textContent = translations[lang].news1Title;
+            document.getElementById("news-desc-1").innerHTML = translations[lang].news1Desc;
+            document.getElementById("news-title-2").textContent = translations[lang].news2Title;
+            document.getElementById("news-desc-2").innerHTML = translations[lang].news2Desc;
+            document.getElementById("news-title-3").textContent = translations[lang].news3Title;
+            document.getElementById("news-desc-3").innerHTML = translations[lang].news3Desc;
+            document.getElementById("footer-contact").innerHTML = translations[lang].footerContact;
+        }
+
+        function changeLanguage(lang) {
+            localStorage.setItem("lang", lang);
+            applyTranslations(lang);
+        }
+
+        applyTranslations(currentLang);
+    </script>
+</body>
+</html>

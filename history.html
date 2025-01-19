@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Тарих</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #f9f1e7;
+            color: #333;
+            margin: 0;
+        }
+        header {
+            background: #8B0000;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        header .language-switcher {
+            margin-top: 10px;
+        }
+        header .language-switcher a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        header .language-switcher a:hover {
+            background: #fff;
+            color: #8B0000;
+        }
+        nav {
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            padding: 15px;
+            text-decoration: none;
+            color: #8B0000;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background: #8B0000;
+            color: #fff;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            min-height: calc(100vh - 160px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        h1 {
+            color: #8B0000;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .slider {
+            position: relative;
+            max-width: 90%;
+            margin: 50px auto; /* Center the slider vertically and horizontally */
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            padding-top: 56.25%; /* Maintain 16:9 aspect ratio */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensure images fit within container */
+        }
+
+        .slides img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="page-header">Тарих</h1>
+        <div class="language-switcher">
+            <a href="#" onclick="changeLanguage('kk')">Қазақша</a>
+            <a href="#" onclick="changeLanguage('ru')">Русский</a>
+            <a href="#" onclick="changeLanguage('en')">English</a>
+        </div>
+    </header>
+    <nav>
+        <a href="index.html">Басты бет</a>
+        <a href="culture.html">Мәдениет</a>
+        <a href="traditions.html">Дәстүрлер</a>
+        <a href="news.html">Жаңалықтар</a>
+        <a href="contact.html">Байланыс</a>
+    </nav>
+    <div class="content">
+        <h1 id="page-title-content">Қазақстанның тарихы</h1>
+        <p id="content-1">Қазақстанның тарихы — бұл Ұлы дала мәдениетінің, көшпенді өркениеттің және ежелгі халықтардың терең тарихы. Ежелгі заманда Қазақстан аумағында сақтар, ғұндар, үйсіндер, қаңлылар сияқты халықтар өмір сүрді.</p>
+        <p id="content-2">Орта ғасырларда бұл өңірде Түркі қағанаты, Қарахан мемлекеті, Алтын Орда сынды ірі империялар пайда болды. Олар қазақ жерінің мәдениеті мен өркениетінің дамуына зор үлес қосты.</p>
+        <p id="content-3">XV ғасырда Қазақ хандығы құрылып, халықтың өзіндік бірегейлігі мен ұлттық рухы нығайды. Бұл кезең қазақ халқының мемлекеттік құрылымының негізін қалады.</p>
+        <p id="content-4">Қазақстанның тарихы тек ерлік пен мәдениет қазыналарының ғана емес, сонымен қатар ғылым, білім және өнеркәсіп саласындағы табыстарымен ерекшеленеді. Қазіргі таңда Қазақстан әлемдік аренада тәуелсіз мемлекет ретінде танылып отыр.</p>
+        <div class="slider">
+            <div class="slides">
+                <img src="https://massaget.kz/userdata/news/news_34105/image_l.jpg" alt="Image 1">
+                <img src="https://egemen.kz/article_photo/1544586662_article_b.jpeg" alt="Image 2">
+                <img src="https://baq.kz/storage/news/2021/10/25/Z0IBq9lENIZgmqwrDQVPVpdUiLCAsKZkBVAwRPh9.jpg" alt="Image 3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdJtYNXLxefHDqTfYEqtWn0GfVI5yGHPhYNA&s" alt="Image 4">
+                <img src="https://orken-media.kz/wp-content/uploads/2018/04/22343.jpg" alt="Image 5">
+                <img src="https://e-history.kz/media/ent/kazakhstan-history-bg.png" alt="Image 6">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p id="footer-contact">Байланыс: egizbaeva_85@mail.ru</p>
+    </footer>
+    <script>
+        const translations = {
+            kk: {
+                title: "Тарих",
+                header: "Тарих",
+                titleContent: "Қазақстанның тарихы",
+                content1: "Қазақстанның тарихы — бұл Ұлы дала мәдениетінің, көшпенді өркениеттің және ежелгі халықтардың терең тарихы. Ежелгі заманда Қазақстан аумағында сақтар, ғұндар, үйсіндер, қаңлылар сияқты халықтар өмір сүрді.",
+                content2: "Орта ғасырларда бұл өңірде Түркі қағанаты, Қарахан мемлекеті, Алтын Орда сынды ірі империялар пайда болды. Олар қазақ жерінің мәдениеті мен өркениетінің дамуына зор үлес қосты.",
+                content3: "XV ғасырда Қазақ хандығы құрылып, халықтың өзіндік бірегейлігі мен ұлттық рухы нығайды. Бұл кезең қазақ халқының мемлекеттік құрылымының негізін қалады.",
+                content4: "Қазақстанның тарихы тек ерлік пен мәдениет қазыналарының ғана емес, сонымен қатар ғылым, білім және өнеркәсіп саласындағы табыстарымен ерекшеленеді. Қазіргі таңда Қазақстан әлемдік аренада тәуелсіз мемлекет ретінде танылып отыр.",
+                footerContact: "Байланыс: egizbaeva_85@mail.ru"
+            },
+            ru: {
+                title: "История",
+                header: "История",
+                titleContent: "История Казахстана",
+                content1: "История Казахстана — это глубокая история культуры Великой степи, кочевой цивилизации и древних народов. В древности на территории Казахстана жили саки, гунны, усуни, канглы и другие народы.",
+                content2: "В средние века здесь возникли такие крупные империи, как Тюркский каганат, государство Караханидов, Золотая Орда. Они внесли значительный вклад в развитие культуры и цивилизации казахских земель.",
+                content3: "В XV веке было образовано Казахское ханство, что укрепило самобытность и национальный дух народа. Этот период стал основой государственной структуры казахов.",
+                content4: "История Казахстана примечательна не только героизмом и культурными богатствами, но и успехами в науке, образовании и промышленности. Сегодня Казахстан признан независимым государством на мировой арене.",
+                footerContact: "Контакт: egizbaeva_85@mail.ru"
+            },
+            en: {
+                title: "History",
+                header: "History",
+                titleContent: "History of Kazakhstan",
+                content1: "The history of Kazakhstan is the deep history of the culture of the Great Steppe, the nomadic civilization, and ancient peoples. In ancient times, the territory of Kazakhstan was inhabited by Saka, Huns, Usun, Kangly, and other peoples.",
+                content2: "In the Middle Ages, such great empires as the Turkic Khaganate, the Karakhanid State, and the Golden Horde arose in this region. They contributed significantly to the development of the culture and civilization of Kazakh lands.",
+                content3: "In the 15th century, the Kazakh Khanate was established, which strengthened the identity and national spirit of the people. This period laid the foundation for the state structure of the Kazakhs.",
+                content4: "The history of Kazakhstan is notable not only for its heroism and cultural treasures but also for its achievements in science, education, and industry. Today, Kazakhstan is recognized as an independent state on the world stage.",
+                footerContact: "Contact: egizbaeva_85@mail.ru"
+            }
+        };
+
+        const currentLang = localStorage.getItem("lang") || "kk";
+
+        function applyTranslations(lang) {
+            document.title = translations[lang].title;
+            document.getElementById("page-header").textContent = translations[lang].header;
+            document.getElementById("page-title-content").textContent = translations[lang].titleContent;
+            document.getElementById("content-1").textContent = translations[lang].content1;
+            document.getElementById("content-2").textContent = translations[lang].content2;
+            document.getElementById("content-3").textContent = translations[lang].content3;
+            document.getElementById("content-4").textContent = translations[lang].content4;
+            document.getElementById("footer-contact").textContent = translations[lang].footerContact;
+        }
+
+        function changeLanguage(lang) {
+            localStorage.setItem("lang", lang);
+            applyTranslations(lang);
+        }
+
+        applyTranslations(currentLang);
+    </script>
+</body>
+</html>

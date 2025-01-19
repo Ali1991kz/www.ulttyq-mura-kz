@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Іздеу нәтижелері</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            color: #8B0000;
+        }
+        .result {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f9f9f9;
+        }
+        .result a {
+            color: #8B0000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .result a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Іздеу нәтижелері</h1>
+    <div id="results"></div>
+
+    <script>
+        // Получение результатов из localStorage
+        const results = JSON.parse(localStorage.getItem("searchResults"));
+
+        const resultsDiv = document.getElementById("results");
+
+        if (results && results.length > 0) {
+            results.forEach(result => {
+                const resultElement = document.createElement("div");
+                resultElement.classList.add("result");
+                resultElement.innerHTML = `
+                    <h2><a href="${result.url}">${result.title}</a></h2>
+                    <p>${result.content}</p>
+                `;
+                resultsDiv.appendChild(resultElement);
+            });
+        } else {
+            resultsDiv.textContent = "Іздеу нәтижелері табылмады!";
+        }
+    </script>
+</body>
+</html>
